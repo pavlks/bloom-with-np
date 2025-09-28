@@ -40,15 +40,15 @@ const HeroSection = () => {
         </div>
         
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-          <div className="glass-morphism p-6 rounded-lg text-white">
+          <div className="p-6 rounded-lg text-white" style={{ background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(2px)' }}>
             <div className="text-3xl font-bold mb-2">18+</div>
             <div className="text-sm opacity-90">лет опыта в психологии</div>
           </div>
-          <div className="glass-morphism p-6 rounded-lg text-white">
+          <div className="p-6 rounded-lg text-white" style={{ background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(2px)' }}>
             <div className="text-3xl font-bold mb-2">100%</div>
             <div className="text-sm opacity-90">онлайн формат</div>
           </div>
-          <div className="glass-morphism p-6 rounded-lg text-white">
+          <div className="p-6 rounded-lg text-white" style={{ background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(2px)' }}>
             <div className="text-3xl font-bold mb-2">24/7</div>
             <div className="text-sm opacity-90">поддержка и забота</div>
           </div>

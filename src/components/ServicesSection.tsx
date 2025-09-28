@@ -79,15 +79,11 @@ const ServicesSection = () => {
                 </div>
               </div>
               
-              <ul className="space-y-3 mb-6">
+              <ul className="space-y-3">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="list-leaf text-sm">{feature}</li>
                 ))}
               </ul>
-              
-              <Button variant="outline" className="w-full">
-                Записаться
-              </Button>
             </div>
           ))}
         </div>
@@ -114,11 +110,6 @@ const ServicesSection = () => {
                 </div>
               </div>
             ))}
-          </div>
-          <div className="text-center mt-8">
-            <Button variant="gradient" size="lg">
-              Выбрать пакет
-            </Button>
           </div>
         </div>
       </div>
