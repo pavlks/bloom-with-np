@@ -47,6 +47,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        peach: {
+          light: "hsl(var(--peach-light))",
+          medium: "hsl(var(--peach-medium))",
+          dark: "hsl(var(--peach-dark))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +62,20 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      fontFamily: {
+        heading: ["Playfair Display", "serif"],
+        sans: ["Inter", "sans-serif"],
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--orange-gradient)',
+      },
+      boxShadow: {
+        'soft': 'var(--shadow-soft)',
+        'glass': 'var(--shadow-glass)',
+      },
+      backdropBlur: {
+        'glass': 'var(--blur-glass)',
       },
       borderRadius: {
         lg: "var(--radius)",
