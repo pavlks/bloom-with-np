@@ -31,7 +31,11 @@ const FirstMeetingSection = () => {
               <li className="list-leaf">Ответы на ваши вопросы</li>
             </ul>
             
-            <Button variant="outline" className="w-full">
+            <Button 
+              variant="outline" 
+              className="w-full"
+              onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Записаться на знакомство
             </Button>
           </div>
@@ -54,7 +58,11 @@ const FirstMeetingSection = () => {
               <li className="list-leaf">Домашние задания и рекомендации</li>
             </ul>
             
-            <Button variant="gradient" className="w-full">
+            <Button 
+              variant="gradient" 
+              className="w-full"
+              onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Записаться на сессию
             </Button>
           </div>
