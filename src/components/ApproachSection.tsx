@@ -1,22 +1,25 @@
+import { Button } from "@/components/ui/button";
+import { Heart, Sprout, Target, RotateCcw, UserCheck, Focus, Users, Heart as HeartIcon, Bird, UsersRound } from "lucide-react";
+
 const ApproachSection = () => {
   const principles = [
     {
-      icon: "🤲",
+      icon: Heart,
       title: "Безопасность и принятие",
       description: "Создаю пространство, где вы можете быть собой без страха осуждения. Каждая эмоция и переживание имеют право на существование."
     },
     {
-      icon: "🌱",
+      icon: Sprout,
       title: "Целостный подход",
       description: "Работаю не только с мыслями, но и с телом, эмоциями и отношениями. Человек — это единая система, где всё взаимосвязано."
     },
     {
-      icon: "🎯",
+      icon: Target,
       title: "Фокус на ресурсах",
       description: "Помогаю обнаружить и активировать ваши внутренние силы. Верю, что у каждого есть способность к исцелению и росту."
     },
     {
-      icon: "🔄",
+      icon: RotateCcw,
       title: "Экологичные изменения",
       description: "Изменения происходят в комфортном темпе, с уважением к вашим границам и готовности к трансформациям."
     }
@@ -42,7 +45,7 @@ const ApproachSection = () => {
               className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-lg transition-all duration-300"
             >
               <div className="flex items-start gap-4">
-                <div className="text-4xl mb-4">{principle.icon}</div>
+                <principle.icon className="w-12 h-12 text-emerald-500 drop-shadow-lg flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-heading text-xl font-semibold mb-3 text-foreground">
                     {principle.title}
@@ -62,42 +65,42 @@ const ApproachSection = () => {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="text-center p-6 bg-background rounded-xl">
-              <div className="text-3xl mb-3">🧘‍♀️</div>
+              <UserCheck className="w-10 h-10 text-emerald-500 drop-shadow-sm mx-auto mb-3" />
               <h4 className="font-semibold mb-2">Телесно-ориентированная терапия</h4>
               <p className="text-sm text-muted-foreground">
                 Работа через тело для освобождения от напряжений и травм
               </p>
             </div>
             <div className="text-center p-6 bg-background rounded-xl">
-              <div className="text-3xl mb-3">🔄</div>
+              <Focus className="w-10 h-10 text-emerald-500 drop-shadow-sm mx-auto mb-3" />
               <h4 className="font-semibold mb-2">Гештальт подход</h4>
               <p className="text-sm text-muted-foreground">
                 Фокус на настоящем моменте и осознанности
               </p>
             </div>
             <div className="text-center p-6 bg-background rounded-xl">
-              <div className="text-3xl mb-3">👨‍👩‍👧‍👦</div>
+              <Users className="w-10 h-10 text-emerald-500 drop-shadow-sm mx-auto mb-3" />
               <h4 className="font-semibold mb-2">Системная терапия</h4>
               <p className="text-sm text-muted-foreground">
                 Работа с семейными и парными динамиками
               </p>
             </div>
             <div className="text-center p-6 bg-background rounded-xl">
-              <div className="text-3xl mb-3">💖</div>
+              <HeartIcon className="w-10 h-10 text-emerald-500 drop-shadow-sm mx-auto mb-3" />
               <h4 className="font-semibold mb-2">Сексологическое консультирование</h4>
               <p className="text-sm text-muted-foreground">
                 Работа с интимностью и сексуальностью
               </p>
             </div>
             <div className="text-center p-6 bg-background rounded-xl">
-              <div className="text-3xl mb-3">🕊️</div>
+              <Bird className="w-10 h-10 text-emerald-500 drop-shadow-sm mx-auto mb-3" />
               <h4 className="font-semibold mb-2">Работа с горем</h4>
               <p className="text-sm text-muted-foreground">
                 Сопровождение в процессе переживания потерь
               </p>
             </div>
             <div className="text-center p-6 bg-background rounded-xl">
-              <div className="text-3xl mb-3">💑</div>
+              <UsersRound className="w-10 h-10 text-emerald-500 drop-shadow-sm mx-auto mb-3" />
               <h4 className="font-semibold mb-2">Парная терапия</h4>
               <p className="text-sm text-muted-foreground">
                 Работа с отношениями и коммуникацией

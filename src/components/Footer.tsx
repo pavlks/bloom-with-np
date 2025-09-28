@@ -1,5 +1,7 @@
 import Logo from "./Logo";
 
+import { Phone } from "lucide-react";
+
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-border py-12">
@@ -28,7 +30,10 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Контакты</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>📧 nanana.pupupu@psychology.com</li>
-              <li>📱 +7 (999) 123-45-67</li>
+              <li className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-emerald-500 drop-shadow-sm" />
+                +7 (999) 123-45-67
+              </li>
               <li>💬 @nanana_psychologist</li>
               <li>🕐 Пн-Пт: 9:00-20:00 МСК</li>
             </ul>

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Phone, Leaf, Mail, MessageCircle, Clock } from "lucide-react";
 
 const ContactsSection = () => {
   return (
@@ -23,7 +24,7 @@ const ContactsSection = () => {
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-xl">📧</span>
+                  <Mail className="w-6 h-6 text-emerald-500 drop-shadow-sm" />
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
@@ -36,7 +37,7 @@ const ContactsSection = () => {
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-xl">📱</span>
+                  <Phone className="w-6 h-6 text-emerald-500 drop-shadow-sm" />
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">WhatsApp</h4>
@@ -49,7 +50,7 @@ const ContactsSection = () => {
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-xl">💬</span>
+                  <MessageCircle className="w-6 h-6 text-emerald-500 drop-shadow-sm" />
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Telegram</h4>
@@ -62,7 +63,7 @@ const ContactsSection = () => {
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-xl">🕐</span>
+                  <Clock className="w-6 h-6 text-emerald-500 drop-shadow-sm" />
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Время работы</h4>
@@ -114,7 +115,10 @@ const ContactsSection = () => {
 
             <div className="bg-peach-light/30 rounded-2xl p-6">
               <h4 className="font-semibold mb-3 text-foreground">
-                🌿 Пространство для роста
+              <span className="inline-flex items-center gap-2">
+                <Leaf className="w-5 h-5 text-emerald-500 drop-shadow-sm" />
+                Пространство для роста
+              </span>
               </h4>
               <p className="text-sm text-muted-foreground">
                 Каждая сессия — это возможность стать ближе к себе настоящему. 

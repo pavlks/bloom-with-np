@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Handshake, Clock } from "lucide-react";
 
 const FirstMeetingSection = () => {
   return (
@@ -17,7 +18,7 @@ const FirstMeetingSection = () => {
           <div className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-lg transition-all duration-300 border-2 border-transparent hover:border-accent/20">
             <div className="mb-6">
               <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🤝</span>
+                <Handshake className="w-8 h-8 text-emerald-500 drop-shadow-sm" />
               </div>
               <h3 className="font-heading text-2xl font-semibold mb-2">Знакомство</h3>
               <div className="text-3xl font-bold text-primary mb-2">20 минут</div>
@@ -44,7 +45,7 @@ const FirstMeetingSection = () => {
           <div className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-lg transition-all duration-300 border-2 border-primary/20">
             <div className="mb-6">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">💼</span>
+                <Clock className="w-8 h-8 text-emerald-500 drop-shadow-sm" />
               </div>
               <h3 className="font-heading text-2xl font-semibold mb-2">Полная сессия</h3>
               <div className="text-3xl font-bold text-primary mb-2">60 минут</div>
