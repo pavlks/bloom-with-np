@@ -16,11 +16,11 @@ const Index = () => {
       <SectionDivider />
       <AboutSection />
       <SectionDivider />
+      <ApproachSection />
+      <SectionDivider />
       <ServicesSection />
       <SectionDivider />
       <FirstMeetingSection />
-      <SectionDivider />
-      <ApproachSection />
       <SectionDivider />
       <FAQSection />
       <SectionDivider />
