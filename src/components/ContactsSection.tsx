@@ -77,8 +77,15 @@ const ContactsSection = () => {
             </div>
 
             <div className="mt-8 pt-6 border-t border-border">
-              <Button variant="gradient" className="w-full" size="lg">
-                Написать в WhatsApp
+              <Button 
+                variant="gradient" 
+                className="w-full" 
+                size="lg"
+                asChild
+              >
+                <a href="https://wa.me/19491342" target="_blank" rel="noopener noreferrer">
+                  Написать в WhatsApp
+                </a>
               </Button>
             </div>
           </div>
@@ -94,8 +101,16 @@ const ContactsSection = () => {
                 или Telegram. Я отвечаю обычно в течение нескольких часов.
               </p>
               <div className="flex gap-3">
-                <Button variant="outline" size="sm">WhatsApp</Button>
-                <Button variant="outline" size="sm">Telegram</Button>
+                <Button variant="outline" size="sm" asChild>
+                  <a href="https://wa.me/19491342" target="_blank" rel="noopener noreferrer">
+                    WhatsApp
+                  </a>
+                </Button>
+                <Button variant="outline" size="sm" asChild>
+                  <a href="https://t.me/psy_pro2" target="_blank" rel="noopener noreferrer">
+                    Telegram
+                  </a>
+                </Button>
               </div>
             </div>
 

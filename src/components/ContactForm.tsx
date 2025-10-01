@@ -13,29 +13,26 @@ const ContactForm = () => {
     message: "",
     sessionType: "individual"
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
+    
+    const emailSubject = encodeURIComponent('Заявка на консультацию');
+    const emailBody = encodeURIComponent(
+      `Имя: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Телефон: ${formData.phone}\n` +
+      `Тип консультации: ${formData.sessionType}\n\n` +
+      `Сообщение:\n${formData.message}`
+    );
+    
+    window.location.href = `mailto:psy_nat@yahoo.es?subject=${emailSubject}&body=${emailBody}`;
+    
     toast({
-      title: "Заявка отправлена!",
-      description: "Я свяжусь с вами в течение 24 часов для уточнения деталей встречи.",
+      title: "Открываю почтовый клиент",
+      description: "Отправьте письмо из вашего почтового приложения",
     });
-
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-      sessionType: "individual"
-    });
-    setIsSubmitting(false);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -130,10 +127,9 @@ const ContactForm = () => {
                 type="submit" 
                 variant="gradient" 
                 size="lg"
-                disabled={isSubmitting}
                 className="px-8 py-4"
               >
-                {isSubmitting ? "Отправляю..." : "Отправить заявку"}
+                Отправить заявку
               </Button>
             </div>
 
